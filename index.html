@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+           
+        }
+        div {
+            width: 100%;
+          
+
+        }
+        input{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: rgba(44, 34, 34, 0.167);
+            color: violet;
+            width: 80%;
+            border-radius: 10px;
+            border: none;
+            cursor: text;
+            transition:all 0.75s;
+            box-shadow: 1px 1px 15px 1px rgba(255, 0, 0, 0.456);
+            font-size: 20px;
+            
+        }
+        div .num{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 15px;
+            background-color: rgba(44, 34, 34, 0.167);
+            color: violet;
+            width: 15%;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition:all 1s;
+            margin-top: 25px;
+            font-size: 15px;
+        }
+        div .nums{
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 15px;
+            background-color: rgba(44, 34, 34, 0.167);
+            color: violet;
+            width: 15%;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition:all 1s;
+            margin-top: 50px;
+            font-size: 15px;
+        }
+        #inf:hover{
+            
+            border-color: brown;
+            padding: 20px;
+            background-color: rgba(152, 125, 125, 0.167);
+          
+        }
+        #inff:hover{
+            padding: 20px;
+            font-size: 20px;
+            border-color: brown;
+            background-color: rgba(152, 125, 125, 0.167);
+        }
+        .num:hover{
+            border-color: brown;
+            width: 18%;
+            color:white;
+            font-size: 20px;
+        }
+        .nums:hover{
+            border-color: brown;
+            width: 18%;
+            color:white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+     <!-- <h1>page title</h1>
+    <div id="helloo" >hello</div>
+    <input id="subb" onclick="hello()" type="button" value="submit"> -->
+    <div>
+ <form action="">
+   <!-- <button id="show" >SHOW</button> -->
+   
+   <input  id="bankper" type="number"  placeholder="أدخل نسبة البنك" autofocus>
+   <input  id="banktax" type="number" placeholder="أدخل الضريبة المضافة على نسبة البنك" >
+   <input  id="inf" type="number" placeholder=" أدخل القيمة المستلمة من البنك">
+   <input  id="inff" type="number" placeholder="القيمة الإجمالية قبل النسبة و الضريبة" >
+   <input type="button" value="Calc" id="show" class="nums" >
+   <input type="reset" class="num" value="Clear">
+</form>
+</div>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
